@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500&display=swap');
+*{
+    font-family: 'Sono', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background: #f9f9f9;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: rgb(34, 188, 111);
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+    position: relative;
+    margin-left: 1000px;
+
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+.heading{
+    text-align: center;
+    background: black;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo img {
+    display: block;
+    max-width: 100px;
+    margin-right: 10px; 
+}
+  
+.logo span {
+    display: block;
+    font-size: 2rem;
+    color: rgb(175, 117, 9);
+    text-align: center;
+   
+}
+
+
+
+header input{
+    display: none;
+}
+
+
+header label{
+    font-size: 3rem;
+    color: chocolate;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header i.fa-cart-shopping {
+    font-size: 30px;
+    margin-right: -850px;
+    position: relative;
+    
+}
+
+header i.fa-bookmark {
+    font-size: 30px;
+    margin-right: 5px;
+    position: relative;
+
+}
+
+.inicio {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.inicio .content .navbar{
+    margin-top: -220px;
+}
+.content{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+
+
+}
+.navbar a {
+    margin: 0 15px;
+    color: black;
+    font-size: 2.5rem;
+
+}
+.navbar a:hover {
+    color: rgb(220, 31, 34);
+
+}
+
+.suscribete{
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url(img/tipos-de-grano.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(80, 79, 79);
+    background-blend-mode: darken;
+    margin-top: -500px;
+
+}
+
+
+.suscribete h3{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.suscribete p{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 70rem;
+}
+
+.suscribete form{
+    display: flex;
+    max-width: 70rem;
+    border: .2rem solid whitesmoke;
+    padding: .5rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    height: 5.5rem;
+}
+
+.suscribete form input[type="email"]{
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    background: none;
+    width: 100%;
+    color: white;
+    text-transform: none;
+    background: none;
+
+}
+
+.suscribete form input[type="email"]::placeholder{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.suscribete form input[type="submit"]{
+    background: white;
+    width: 20rem;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+
+.suscribete form input[type="submit"]:hover{
+    color: brown;
+}
+.opiniones .heading{
+    justify-content: flex-start;
+    margin-left: -860px;
+    margin-top: -580px;
+}
+
+.opiniones .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.opiniones .caja-contenedor .caja{
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+}
+
+
+.opiniones .caja-contenedor .caja .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+
+.opiniones .caja-contenedor .caja .user h3{
+    color: brown;
+    font-size: 2rem;
+
+}
+
+
+.opiniones .caja-contenedor .caja .user .star i{
+    color: goldenrod;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+
+}
+
+.opiniones .caja-contenedor .caja .comentarios{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+
+
+@media(max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+
+    }
+    header input:checked ~ label::before{
+        content: '\f00d';
+    } 
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+        
+    }
+
+    .acerca_de{
+        background-position: right;
+    }
+
+    .suscribete p{
+        width: auto;
+    }
+}
+
